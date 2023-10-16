@@ -4,5 +4,5 @@
 */
 const myGender = 'male';
 console.log(myGender);
-export { myGender };
+export {};
 //# sourceMappingURL=8.js.map
