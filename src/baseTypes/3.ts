@@ -7,4 +7,4 @@ if (typeof some === 'string') {
 }
 
 
-export { some, str };
+export {  };

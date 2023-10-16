@@ -10,4 +10,4 @@ let person: [string, number] = ['Max', 21];
 //  Варіант не через кортеж 
 // let person: (string | number)[] = ['Max', 21];
 
-export { person };
+export {  };
