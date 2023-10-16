@@ -32,4 +32,4 @@ let callback: (a: number) => number = (a) => { return 100 + a };
 
 
 
-export { };
+export { age, name, toggle, empty, notInitialize, callback };
