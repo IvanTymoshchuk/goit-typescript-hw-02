@@ -11,19 +11,19 @@ function compare(top, bottom) {
         weight: bottom.weight,
     };
 }
-const topObject = {
+const topObj = {
     name: "Top Name",
     color: "Top Color",
     position: 0,
     weight: 0
 };
-const bottomObject = {
+const bottomObj = {
     position: 42,
     weight: 100,
     name: "",
     color: ""
 };
-const result = compare(topObject, bottomObject);
+const result = compare(topObj, bottomObj);
 console.log(result);
 export {};
 //# sourceMappingURL=2.js.map

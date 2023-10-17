@@ -20,21 +20,21 @@ function compare<T extends AllType, K extends AllType>(top: Pick<T, keyof AllTyp
   }
 }
 
-// const topObj: Pick<AllType, keyof AllType> = {
-//   name: "Top Name",
-//   color: "Top Color",
-//   position: 0,
-//   weight: 0
-// };
+const topObj: Pick<AllType, keyof AllType> = {
+  name: "Top Name",
+  color: "Top Color",
+  position: 0,
+  weight: 0
+};
 
-// const bottomObj: Pick<AllType, keyof AllType> = {
-//   position: 42,
-//   weight: 100,
-//   name: "",
-//   color: ""
-// };
+const bottomObj: Pick<AllType, keyof AllType> = {
+  position: 42,
+  weight: 100,
+  name: "",
+  color: ""
+};
 
-// const result: AllType = compare(topObj, bottomObj);
-// console.log(result);
+const result: AllType = compare(topObj, bottomObj);
+console.log(result);
 
 export { };
