@@ -10,10 +10,24 @@ export enum UserRole {
 }
 
 // Замініть наступний код на версію за допомогою Record
-const RoleDescription = {
-  admin: 'Admin User',
-  editor: 'Editor User',
-  guest: 'Guest User',
+
+const RoleDescription: Record<UserRole, string> = {
+  [UserRole.admin]: 'Admin User',
+  [UserRole.editor]: 'Editor User',
+  [UserRole.guest]: 'Guest User',
 };
 
-export {};
+console.log(RoleDescription);
+
+
+//* 2 variant:
+// Для кращої читабельності винесли в окремий тип
+// type UserRoleStatus = Record<UserRole, string>;
+
+// const RoleDescription: UserRoleStatus = {
+//   [UserRole.admin]: 'Admin User',
+//   [UserRole.editor]: 'Editor User',
+//   [UserRole.guest]: 'Guest User',
+// };
+
+export { };

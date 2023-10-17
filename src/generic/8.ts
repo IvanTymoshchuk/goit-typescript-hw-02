@@ -19,6 +19,7 @@ type Form = {
 };
 
 // Реалізуйте Params так, щоб унеможливити поле 'errors' з типу Form
-type Params = Form;
 
-export {};
+type Params = Omit<Form, 'errors'>;
+//! Omit<T, K> - Це Pick, але навпаки.Дозволяє створити новий тип на основі типу T шляхом виключення набору властивостей, зазначених у K.
+export { };
